@@ -30,7 +30,7 @@ def order_ribbon(pd)
   return bow + wrap
 end
 
-presents = File.open("./inputs/day2-input", "r").read.each_line do |line|
+presents = File.open("../inputs/day2-input", "r").read.each_line do |line|
   total_paper += order_paper(line.split('x').map(&:to_i))
   total_ribbon += order_ribbon(line.split('x').map(&:to_i).sort)
 end

@@ -13,7 +13,7 @@ def houses_visited(coordinates,robo_coordinates)
   return total.uniq.length
 end
 
-input = File.open("./inputs/day3-input", "r").read.each_char do |char|
+input = File.open("../inputs/day3-input", "r").read.each_char do |char|
   if robo_santa == false
     if char == "^"
       coordinates << [coordinates.last[0], coordinates.last[1] + 1]

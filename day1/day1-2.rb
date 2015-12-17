@@ -10,7 +10,7 @@ def is_basement(floor, index)
 end
 
 floor = 0
-directions = File.open("./inputs/day1-input", "r").read.chomp.split('').each_with_index do |value, index|
+directions = File.open("../inputs/day1-input", "r").read.chomp.split('').each_with_index do |value, index|
   floor += 1 if value == "("
   floor -= 1 if value == ")"
   is_basement(floor, index)

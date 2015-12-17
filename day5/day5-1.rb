@@ -42,7 +42,7 @@ end
 nice = 0
 naughty = 0
 
-input = File.open('./inputs/day5-input', 'r').read.each_line do |line|
+input = File.open('../inputs/day5-input', 'r').read.each_line do |line|
   nice += 1 if sentiment(line.chomp) == "nice"
   naughty += 1 if sentiment(line.chomp) == "naughty"
 end
